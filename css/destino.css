@@ -10107,6 +10107,7 @@ textarea.form-control-lg {
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  padding: 0;
 }
 
 /* MENU */
@@ -10120,9 +10121,27 @@ body {
   font-weight: 600;
 }
 
-/* carrusel */
+#imageConteiner {
+  max-height: 39rem;
+}
+
+#sportImage {
+  margin: 0;
+  padding-left: 50%;
+  padding-right: 50%;
+}
+
+/* carousel */
 .carousel-inner {
-  max-height: 39rem !important;
+  max-height: 39rem;
+}
+
+#sportContent {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* contacto */
@@ -10174,55 +10193,49 @@ footer p {
   grid-template-areas: "bannerUno bannerUno bannerUno bannerUno" "noticiaDos noticiaDos noticiaTres noticiaCuatro" "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro";
 }
 
-.bannerUno {
+.bannerUno, .noticiaSiete, .noticiaSeis, .noticiaCinco, .noticiaCuatro, .noticiaDos, .noticiaTres {
   grid-area: bannerUno;
   background-color: #fbfafa;
 }
 
 .noticiaTres {
   grid-area: noticiaTres;
-  background-color: #fbfafa;
 }
 
 .noticiaDos {
   grid-area: noticiaDos;
-  background-color: #fbfafa;
 }
 
 .noticiaCuatro {
   grid-area: noticiaCuatro;
-  background-color: #fbfafa;
 }
 
 .noticiaCinco {
   grid-area: noticiaCinco;
-  background-color: #fbfafa;
 }
 
 .noticiaSeis {
   grid-area: noticiaSeis;
-  background-color: #fbfafa;
 }
 
 .noticiaSiete {
   grid-area: noticiaSiete;
-  background-color: #fbfafa;
 }
 
 /* media queries */
 @media (max-width: 1200px) {
   #intro, #equipo {
-    width: 90% !important;
+    width: 90%;
     margin: auto;
   }
 }
 @media (max-width: 768px) {
   #intro, #equipo {
-    width: 90% !important;
+    width: 90%;
     margin: auto;
   }
   img {
-    width: 100%;
+    width: 200px;
     height: auto;
   }
   #bg-contactos {
@@ -10231,14 +10244,18 @@ footer p {
 }
 @media (max-width: 576px) {
   #notis-fila-2 {
-    width: 100% !important;
+    width: 100%;
   }
   #notis-fila-1 {
-    width: 100% !important;
+    width: 100%;
+  }
+  img {
+    width: 200px;
+    height: auto;
   }
   .icono-wrap {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
 }
