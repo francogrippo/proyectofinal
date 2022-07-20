@@ -1,0 +1,55 @@
+/* media queries */
+
+@mixin wm ($ancho, $margen) {
+    width:$ancho;
+    margin:$margen;            
+}
+
+@media (max-width:1200px){
+    #intro, #equipo {
+       
+        @include wm(90%, auto)
+    }
+  
+  
+}
+
+@media (max-width:768px) {
+    #intro, #equipo{
+        @include wm(90%, auto)
+    }
+   
+  
+    img {
+        width:200px;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+
+
+@media (max-width: 576px) {
+    #notis-fila-2 {
+        width:100% ;
+    }
+    #notis-fila-1 {
+        width:100% ;
+    }
+    img {
+        width:200px;
+        height:auto;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap ;
+        justify-content: center ;
+        text-align: center;
+    }
+}
+
+
+
